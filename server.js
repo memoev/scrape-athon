@@ -10,10 +10,12 @@ var app =  express();
 
 var router = express.Router();
 
+// Routes
 require("./config/routes")(router);
 
 app.use(express.static(__dirname + "/public"));
 
+// Handlebars
 app.engine("handlebars", expressHandlebars({defaultLayout: "main"}))
 app.set("view engine", "handlebars");
 
@@ -21,6 +23,7 @@ app.use(bodyParser.urlencoded({extended: false}))
 
 app.use(router);
 
+//Mongoose
 var db = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
 
 mongoose.connect(db, function(error) {
