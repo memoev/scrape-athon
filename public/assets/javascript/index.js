@@ -60,7 +60,7 @@ $(document).ready(function() {
         articleToSave.saved= true;
 
         $.ajax({
-            method: PATCH,
+            method: "PATCH",
             url: "/api/headlines",
             data: articleToSave
         })
