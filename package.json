@@ -1,0 +1,20 @@
+{
+  "name": "scrape-athon",
+  "version": "1.0.0",
+  "description": "🔎Web app that lets users view and leave comments on the latest news.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mexcelus/scrape-athon.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mexcelus/scrape-athon/issues"
+  },
+  "homepage": "https://github.com/mexcelus/scrape-athon#readme"
+}
