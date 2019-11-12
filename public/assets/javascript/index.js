@@ -35,11 +35,11 @@ $(document).ready(function() {
             "Save Article",
             "</a>",
             "</h3>",
-            "</div",
+            "</div>",
             "<div class='panel-body'>",
             article.summary,
-            "</div",
-            "</div"
+            "</div>",
+            "</div>"
         ].join(""));
         panel.data("_id", article._id);
         return panel;
@@ -79,4 +79,4 @@ $(document).ready(function() {
             })
     }
 
-})
+});
