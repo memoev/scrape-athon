@@ -10,9 +10,12 @@ var app =  express();
 
 var router = express.Router();
 
+require("./config/routes")(router);
+
 app.use(express.static(__dirname + "/public"));
 
 app.engine("handlebars", expressHandlebars({defaultLayout: "main"}))
+app.set("view engine", "handlebars");
 
 app.use(bodyParser.urlencoded({extended: false}))
 
